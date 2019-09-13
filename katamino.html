@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+      <title>
+          Katamino Solver
+      </title>
+      <link rel="stylesheet" href="katamino.css">
+  </head>
+
+  <body>
+
+    <div id="control">
+      <h2>Katamino Solver</h2>
+
+      <p>
+        Katamino is a puzzle game in which the player is given a board of a certain
+        size and a set of pieces to fill that board. Each piece is unique in shape
+        but consists of 5 square "blocks", meaning all pieces have the same area.
+        When it comes to the board, even though the height of the board is a
+        constant 5 blocks, its width depends on the number of pieces selected;
+        for each piece selected, the board gets one block added to its width. Thus,
+        the board always has just enough space to accomodate all the pieces selected
+        - the challenge is to make them all fit!
+        <br><br>
+        Note: Expect long execution times when selecting 9 shapes or more! If the
+        page is not responding, it is not broken, but simply busy calculating - sorry! :)
+      </p>
+
+      <h3>Select Shapes:</h3>
+
+      <div id="shapes">
+
+      </div>
+
+      <button type="button" id="run_button"></button>
+      <input id="one_sol_box" type="checkbox"><span>Find only one solution (highly recommended when choosing 7 shapes or more)</span>
+    </div>
+
+    <div>
+      <div id="solutions_info">
+
+      </div>
+      <div id="solutions">
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="katamino.js"></script>
+  </body>
+</html>
